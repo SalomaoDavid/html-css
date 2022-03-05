@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+<head>
+<title> Efeito Básico de um menu </title>
+</head>
+
+<style type="text/css">
+
+li{
+
+filter: blur(1px);
+transition: filter 400ms, font-size 50ms;padding: 4px;margin: 2
+}
+
+li::before{
+
+content: '';
+position: absolute;
+top: 0px;
+left: -5px;
+width: 10px;
+height: 10px;
+border: 2px solid red;
+border-right: 0px;
+border-bottom: 0px;
+opacity: 0;
+}
+
+li::after{
+
+content: '';
+position: absolute;
+top: 20px;
+width: 10px;
+height: 10px;
+border: 2px solid red;
+border-left: 0px;
+border-top: 0px;
+opacity:1;
+
+}
+
+li:hover:after,li:hover:before{
+opacity: 1;
+}
+
+li:hover{
+
+filter: blur(0px);
+font-size: 24px;
+font-weight: 900;
+position: relative;
+cursor: pointer;
+color: red;
+
+}
+</style>
+<body>
+   
+<ul>
+<li>Home</li>
+<li>jogos</li>
+<li><a href="C:\Users\Info.Local\Videos/algebras" target="_blanck">Videos</a></li>
+<li>Musicas</li>
+<li>Usuarios</li>
+</ul>
+</body>
+
+</html>
