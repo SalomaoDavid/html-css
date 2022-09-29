@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
-            max-width: 1000px;
-            min-width: 320px;
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;*/
+            /*shorthand - background 
+            color
+            image
+            position
+            repeat
+            size
+            attachment
+            
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat  fixed;
+
             background-size: cover;
         }
         main{
@@ -45,6 +57,9 @@
             margin-right: 3px;
             display: inline;
             padding: 3px;
+        }
+        ul {
+            text-align: center;
         }
         button{
            
